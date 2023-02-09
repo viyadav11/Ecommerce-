@@ -1,0 +1,22 @@
+<h1>Edit Item</h1>
+
+<%# <%= render "form", item: @item %> 
+
+<%= form_for @item,url: {action: "update"}  do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :price %><br>
+    <%= form.number_field :price %><br>
+    </div>
+<div>
+    <%= form.label :rating %><br>
+    <%= form.number_field :rating %><br>
+</div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

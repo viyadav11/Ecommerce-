@@ -1,0 +1,16 @@
+<h1>Order Details</h1>
+
+<ul>
+  <% @order.each do |order| %>
+    <li>
+    <p> Person name=  <%= order.name %></p>
+      
+    </li>
+     <li>
+      <p> Total price <%= order.totalprice %></p>
+      
+    </li>
+  <% end %>
+</ul>
+
+

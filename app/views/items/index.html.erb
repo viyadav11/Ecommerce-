@@ -1,0 +1,20 @@
+<h1>Items Present </h1>
+<a href="items/new"><button type="button">Create</button></a>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Rating</th>
+    <th>Update</th>
+    <th>Delete</th>
+  </tr>
+ <% @item.each do |item| %>
+ <tr>
+    <td><%=item.name%></td>
+    <td><%=item.price%></td>
+    <td><%=item.rating%></td>
+    <td><a href="items/<%=item.id%>/edit"><button type="button">Update</button></a></td>
+    <td><a href="items/<%=item.id%>"><button type="button">Delete</button></a></td>
+  </tr>
+  <% end %>
+</table>

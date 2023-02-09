@@ -1,0 +1,31 @@
+<h1>New Item</h1>
+
+<%= form_for @item,url: {action: "create"}  do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+     <% @item.errors.full_messages_for(:name).each do |message| %>
+      <div><%= message %></div>
+      <% end %>
+  </div>
+
+  <div>
+    <%= form.label :price %><br>
+    <%= form.number_field :price %><br>
+     <% @item.errors.full_messages_for(:price).each do |message| %>
+      <div><%= message %></div>
+      <% end %>
+  </div>
+
+  <div>
+    <%= form.label :rating %><br>
+    <%= form.number_field :rating %><br>
+     <% @item.errors.full_messages_for(:rating).each do |message| %>
+      <div><%= message %></div>
+      <% end %>
+  </div>
+  
+  <div>
+    <%= form.submit %>
+  </div>
+	<% end %>

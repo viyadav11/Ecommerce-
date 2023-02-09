@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  itemname: MyString
+  itemprice: 9.99
+  quantity: 9.99
+  item: one
+
+two:
+  itemname: MyString
+  itemprice: 9.99
+  quantity: 9.99
+  item: two
