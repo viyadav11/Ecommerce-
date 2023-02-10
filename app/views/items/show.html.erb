@@ -1,6 +1,11 @@
 <ul>
   
-  <li><%= link_to "Destroy",order_item_path(model: @item ), data: {
+  <%# <li><%= link_to "Destroy",order_item_path(model: @item ), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li> %>
+                   
+  <li><%= link_to "Destroy",item_path(model: @item ), data: {
                     turbo_method: :delete,
                     turbo_confirm: "Are you sure?"
                   } %></li>
