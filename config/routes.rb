@@ -18,7 +18,12 @@ Rails.application.routes.draw do
     
 # end
 resources :items do
+  
+  # post "items/buy", to:"items#buy" 
        end
+      #  post "buy/:id", to/:"items#buy" 
+       get "buy/:id", to:"items#buy"
+        get "export", to: "items#export_csv"
 end
 
 

@@ -1,5 +1,5 @@
 class OrderController < ApplicationController
-	def index  
+  def index  
     @order=Order.all
 	end
 end
