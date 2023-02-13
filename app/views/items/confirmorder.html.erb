@@ -1,0 +1,27 @@
+<h4>Name of the Order:<%=@order.name%></h4>
+<h1>Thank You for Placing the Order</h1>
+<h3>Details of the order</h3>
+
+<table>
+<tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Rating</th>
+</tr>
+<%s=0%>
+ <% @items.each do |item| %>
+ <tr>
+    <td><%=item.name%></td>
+    <td><%=item.price%></td>
+    <%s=s+item.price%>
+    <td><%=item.rating%></td>
+    
+</tr>
+
+<%end%>
+
+</table>
+<p>Total Price of Order: <%=s%></p>
+
+
+<%# <a href="/confirmorder"><input type="text"/>Create</a> %>

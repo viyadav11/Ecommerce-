@@ -1,3 +1,27 @@
+<h1>Number of Items In Cart</h1>
+<table>
+<tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Rating</th>
+</tr>
+<%s=0%>
+ <% @items.each do |item| %>
+ <tr>
+    <td><%=item.name%></td>
+    <td><%=item.price%></td>
+    <%s=s+item.price%>
+    <td><%=item.rating%></td>
+    
+</tr>
 
-<% @item.each do |item| %>
-<%=item.%>
+<%end%>
+
+</table>
+<p>Total Price of Order: <%=s%></p>
+<a href="confirmorder"><button class="btn btn-primary" type="button">Confirm</button></a>
+<%# <a href="items/placedorder"><button class="btn btn-primary" type="button">DestroyOrder</button></a> %>
+
+
+<%# <a href="confirmorder"><input type="text"/>Confirmorder</a> %>
+
