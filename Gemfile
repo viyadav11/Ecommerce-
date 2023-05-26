@@ -58,6 +58,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  gem 'factory_girl_rails', '~> 4.5'
   
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -73,3 +74,5 @@ group :test do
   gem "webdrivers"
 end
 gem "byebug"
+gem 'simplecov', require: false, group: :test
+gem 'rubocop-rails', require: false
